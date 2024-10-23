@@ -1,10 +1,11 @@
 import React from "react";
 import InputTextElement from "./InputTextElement";
+import Button from "./Button";
 
 const LoginForm = () => {
   return (
     <form className="d-flex w-100 flex-column justify-content-evenly align-items-center h-100">
-       <InputTextElement
+      <InputTextElement
         htmlFor={"username"}
         labelValue={"Username :"}
         inputType={"text"}
@@ -21,7 +22,7 @@ const LoginForm = () => {
       />
 
       <article>
-        <button>Sign In</button>
+        <Button title="Sign In" bsStyles={"btn btn-primary"} />
       </article>
     </form>
   );

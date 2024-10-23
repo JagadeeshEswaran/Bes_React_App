@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import RegisterForm from "../components/registerForm";
 import LoginForm from "../components/loginForm";
 import InputTextElement from "../components/InputTextElement";
+import Button from "../components/Button";
 
 const UserAuthentication = () => {
   const [pageVariant, setPage] = useState(null);
 
   return (
     <>
-      
-
       <section
         className=" d-flex flex-column justify-content-center align-items-center"
         style={{ height: "100vh" }}
@@ -18,13 +17,13 @@ const UserAuthentication = () => {
           className="mb-3 w-75 d-flex justify-content-evenly align-items-center bg-primary rounded"
           style={{ height: "7vh" }}
         >
-          <button onClick={() => setPage("register")}>Register</button>
-          <button onClick={() => setPage("login")}>Sign In</button>
+          <Button title="Register" handler={setPage} bsStyles={"btn btn-light"} valueString={"register"}  />
+          <Button title={"Sign In"} handler={setPage} bsStyles={"btn btn-light"} valueString={"login"}  />
         </article>
 
         <article
           className="bg-info w-75 rounded d-flex jsutify-content-center align-items-center "
-          style={{ height: "25vh" }}
+          style={{ height: "30vh" }}
         >
           {pageVariant === "register" ? (
             <RegisterForm />
