@@ -11,6 +11,9 @@ const LoginForm = () => {
         inputType={"text"}
         inputName={"username"}
         inputId={"username"}
+        handler={""}
+        data={""}
+        field={""}
       />
 
       <InputTextElement
@@ -19,6 +22,9 @@ const LoginForm = () => {
         inputType={"password"}
         inputName={"password"}
         inputId={"password"}
+        handler={""}
+        data={""}
+        field={""}
       />
 
       <article>
