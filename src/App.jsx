@@ -5,13 +5,14 @@ import UserAuthentication from './Pages/UserAuthentication'
 
 
 function App() {
-
+  const isUserLoggedIn = JSON.parse(localStorage.getItem("isUserLoggedIn"))
+  
 
   return (
     <>
-      {/* <LandingPage /> */}
-
-      <UserAuthentication />
+      {
+        isUserLoggedIn ? <LandingPage /> : <UserAuthentication />
+      }      
     </>
   )
 }
