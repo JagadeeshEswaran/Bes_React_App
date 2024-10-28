@@ -1,20 +1,22 @@
-import Footer from "../components/Footer"
-import MainSection from "../components/MainSection"
-import Navbar from "../components/Navbar"
+import Footer from "../components/Footer";
+import MainSection from "../components/MainSection";
+import Navbar from "../components/Navbar";
 
 const LandingPage = () => {
+  // myRepeatableFUnction()
 
-    // myRepeatableFUnction()
+  return (
+    <section
+      className="bg-light position-relative"
+      style={{ height: "100svh" }}
+    >
+      <Navbar />
 
-    return (
-        <section className="bg-light position-relative" style={{ height: "100svh" }}>
-            <Navbar />
+      <MainSection />
 
-            <MainSection />
+      <Footer />
+    </section>
+  );
+};
 
-            <Footer />
-        </section>
-    )
-}
-
-export default LandingPage
+export default LandingPage;
