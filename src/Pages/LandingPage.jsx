@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <section
       className="bg-light position-relative"
-      style={{ height: "100svh" }}
+      style={{ overflowX: "hidden" }}
     >
       <Navbar />
 
